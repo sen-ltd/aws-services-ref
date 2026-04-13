@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AWS Services Reference</title>
+  <meta name="description" content="Searchable AWS services reference with 60+ services, abbreviations, categories, and bilingual JP/EN descriptions." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-branding">
+        <div class="header-logo">
+          <span class="aws-badge">AWS</span>
+        </div>
+        <div>
+          <h1 id="site-title">AWS Services Reference</h1>
+          <p id="site-subtitle">60+ services organized by category with search</p>
+        </div>
+      </div>
+      <div class="header-controls">
+        <button id="lang-toggle" class="ctrl-btn" aria-label="Switch language">日本語</button>
+        <button id="theme-toggle" class="ctrl-btn" aria-label="Toggle theme">Light mode</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <!-- Search bar -->
+    <div class="search-bar-wrap">
+      <span class="search-icon" aria-hidden="true">⌕</span>
+      <input
+        id="search"
+        type="search"
+        autocomplete="off"
+        spellcheck="false"
+        placeholder="Search services… (e.g. Lambda, storage, database)"
+        aria-label="Search AWS services"
+      />
+      <span id="service-count" class="service-count"></span>
+    </div>
+
+    <!-- Category filter chips -->
+    <nav id="category-nav" class="category-nav" aria-label="Filter by category"></nav>
+
+    <!-- No results message -->
+    <div id="no-results" class="no-results" hidden>
+      <div class="no-results-icon">🔍</div>
+      <p id="no-results-title" class="no-results-title">No services found</p>
+      <p id="no-results-hint" class="no-results-hint">Try a different search term or category</p>
+    </div>
+
+    <!-- Service cards grid -->
+    <div id="results-section" class="results-section"></div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built with vanilla JS · <a href="https://github.com/sen-ltd/aws-services-ref" target="_blank" rel="noopener">GitHub</a> · <a href="https://sen.ltd" target="_blank" rel="noopener">SEN LLC</a></p>
+  </footer>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
