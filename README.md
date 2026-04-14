@@ -58,3 +58,10 @@ npm test
 ## License
 
 MIT © 2026 [SEN LLC (SEN 合同会社)](https://sen.ltd)
+
+<!-- sen-publish:links -->
+## Links
+
+- 🌐 Demo: https://sen.ltd/portfolio/aws-services-ref/
+- 📝 dev.to: https://dev.to/sendotltd/a-searchable-aws-services-reference-with-67-services-and-bilingual-descriptions-3f90
+<!-- /sen-publish:links -->
